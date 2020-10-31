@@ -1,0 +1,50 @@
+
+:root {
+
+    --stdText: #eaf7ff;
+    --highlight: #8ea9ba;
+    --lghtDark: #293541;
+    --mdmDark: #212f38;
+    --Dark:   #000c14;
+
+}
+
+::selection{
+
+     background: var(--highlight); 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	background-color: var(--mdmDark);
+}
+
+#introduction {
+    /* This element's font size and position are dynamically modified in JS */
+
+    font-family: 'Lato', sans-serif;
+    color: var(--stdText);
+    position: fixed;
+    
+}
+
+#name {
+    margin: 0px;
+    padding: 0px;
+}
+
+#description {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#navbar p{
+    display: inline;
+
+}
+
+
