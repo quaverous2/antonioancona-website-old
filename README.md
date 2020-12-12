@@ -10,7 +10,6 @@
       <a href="#about-the-project">About The Project</a>
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -30,11 +29,6 @@ a list of selected projects and ways to contact me.
  
 12/12/2020
  Landing page redesign, major CSS modifications
-
-<!-- LICENSE -->
-## License
-
-Distributed under the GNU General Public License v3.0. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
