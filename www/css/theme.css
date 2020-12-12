@@ -6,45 +6,88 @@
     --lghtDark: #293541;
     --mdmDark: #212f38;
     --Dark:   #000c14;
+    --Red:    #c51f5d;
 
 }
 
-::selection{
-
-     background: var(--highlight); 
-}
-
-* {
-  box-sizing: border-box;
+html {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif; 
 }
 
 body {
-	background-color: var(--mdmDark);
+    background: var(--lghtDark);
+    /* line-height: 1.5; */
+    margin: 9rem 9rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--stdText);
+    line-height: 1rem;
+
+    /* TODO: change if unsightly */
+    margin-left: 0.2rem;
+}
+
+#subtitle {
+    font-size: 2.5rem;
+    color: var(--stdText);
+    line-height: 1rem;
+}
+
+
+
+
+/* Navigation */
+.nav ul {
+    display: grid;
+    grid-gap: 0px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 8rem 8rem 8rem;
+}
+
+.nav a {
+    display: inline;
+    text-decoration: none;
+    padding: 0rem;
+    text-align: left;
+    color: var(--stdText);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.nav a:hover{
+    color: var(--Red);
+}
+
+#imgWrapper {
+    position: fixed;
+    top: 20%;
+    left: 60%
+}
+
+#rose {
+    max-width: 45%
 }
 
 #introduction {
-    /* This element's font size and position are dynamically modified in JS */
 
-    font-family: 'Lato', sans-serif;
     color: var(--stdText);
     position: fixed;
     
 }
 
-#name {
-    margin: 0px;
-    padding: 0px;
+/* TODO: Have these show upon equivalent button click */
+#about_info, #projects_info, #contact_info {
+    display: none;
+} 
+
+
+@media(max-width: 1023px){
+
+    #rose {
+        display: none;
+    }
 }
-
-#description {
-    margin: 0px;
-    padding: 0px;
-}
-
-
-#navbar p{
-    display: inline;
-
-}
-
-

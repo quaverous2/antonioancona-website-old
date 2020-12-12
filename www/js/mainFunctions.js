@@ -1,4 +1,22 @@
 //
+//  ABOUT, PROJECTS, CONTACT ME buttons
+//
+
+/*
+var about = getElementById("about");
+var projects = getElementById("projects");
+var contactMe = getElementById("contactMe");
+
+about.addEventListener("click", myfunction(){
+    return;
+});
+*/
+
+
+
+
+
+//
 //  RESPONSIVENESS FUNCTIONS AND VARIABLES
 //
 
@@ -7,6 +25,9 @@ var introduction_id = document.getElementById("introduction");
 var name_id = document.getElementById("name");
 var description_id = document.getElementById("description");
 var navbar_id = document.getElementById("navbar");
+
+// NEW
+var onlickInformation_id = document.getElementById("onlick_information");
 
 // this line selects the children of ID "navbar" and puts those who have class "links" in the newly created navbar_children array
 var navbar_children = document.getElementById("navbar").querySelectorAll(".links");
@@ -23,6 +44,8 @@ var widht_float_res = 0.09375;
 var width_float_fontSizeName = 0.0364583333333333;
 var width_float_fontSizeDescription = 0.03125;
 var width_float_fontSizeNavbar = 0.0208333333333333;
+// same as navbar to try it
+var widht_float_fontSizeonclickInformation = 0.0208333333333333;
 
 var widht_float_NavbarMarginTop = 0.0260416666666667;
 var width_float_NavbarMarginRight = 0.0755208333333333;
@@ -57,6 +80,13 @@ function responsive(){
     for(var k = 0; k < navbar_children.length; k++){
         navbar_children[k].style.marginRight = ((window.innerWidth * width_float_NavbarMarginRight) + "px");
     }
+
+    // NEW = onlick information positioning
+    onlickInformation_id.style.top = ((window.innerHeight * heigth_float_res) + "px");
+    // console.log(onlickInformation_id.style.top);
+
+    onlickInformation_id.style.left = ((window.innerWidth * width_float_res) + "px");
+
     
 }
 
@@ -69,8 +99,6 @@ var passionList = ["Java", "web developement", "innovative technologies", "sport
 var count = 0;
 var passion_id = document.getElementById("passion");
 
-rotatePassion();
-setInterval(rotatePassion, 3000);
 
 
 
