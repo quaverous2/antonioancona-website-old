@@ -29,6 +29,10 @@ a list of selected projects and ways to contact me.
  
 12/12/2020
  Landing page redesign, major CSS modifications
+ 
+13/12/2020
+  JavaScript overhaul, minor HTML/CSS changes. Website is
+  feature-complete minus the missing written information.
 
 <!-- CONTACT -->
 ## Contact
