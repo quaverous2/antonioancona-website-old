@@ -10,7 +10,7 @@
 
 		<script src="https://kit.fontawesome.com/c30c1f52c9.js" crossorigin="anonymous"></script>
 		<link href="./css/theme.css" rel="stylesheet" type="text/css">
-		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 		<title>
 			Antonio Ancona	
 		</title>
@@ -22,36 +22,36 @@
 		<h1>Antonio Ancona</h1>
 
 		<!-- TODO: Add rotatin word script to span -->
-		<p id = "subtitle">Passionate about<span id= "passion"></span>.</p>
-
-		<div id="imgWrapper">
-			<img id= "rose" src="img/rose.png" alt="">
-		</div>
+		<p id = "subtitle">Passionate about <span id= "passion"></span></p>
 
 		<nav class="nav">
 			<!-- TODO: Each one of these must show the equivalent
 					   information Div once clicked -->
 			<ul>
-				<li> <a href="#">About</a>		</li>
-				<li> <a href="#">Projects</a>	</li>
-				<li> <a href="#">Contact Me</a>	</li>
+				<li> <button onclick="about_button()">About</button>		</li>
+				<li> <button href="" onclick="projects_button()">Projects</button>	</li>
+				<li> <button href="" onclick="contactMe_button()">Contact Me</button>	</li>
 			</ul>
 		</nav>
 
-		<div id="about_info">
+
+		<!-- TODO: As of now, the DIVs need an inline style to display correctly 
+					on the first click, but this issue can be resolved in
+					JavaScript to avoid inline styling-->
+
+		<div style="display : none" id="about_info">
 			<p>About button information</p>
 		</div>
 
-		<div id="projects_info">
+		<div style="display : none" id="projects_info">
 			<p>Projects button information</p>
 		</div>
 
-		<div id="contact_info">
+		<div style="display : none" id="contact_info">
 			<p>Contact me button information</p>
 		</div>
 
-	
-		<!-- <script src="./js/mainFunctions.js"></script> -->
+		<script src="js/mainFunctions.js"></script>
 	</body>
 
 </html>

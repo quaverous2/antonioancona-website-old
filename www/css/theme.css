@@ -25,15 +25,16 @@ h1 {
     font-size: 3.5rem;
     color: var(--stdText);
     line-height: 1rem;
-
-    /* TODO: change if unsightly */
-    margin-left: 0.2rem;
 }
 
 #subtitle {
     font-size: 2.5rem;
     color: var(--stdText);
     line-height: 1rem;
+}
+
+#passion {
+    color: var(--Red);
 }
 
 
@@ -45,32 +46,27 @@ h1 {
     grid-gap: 0px;
     padding: 0;
     list-style: none;
-    grid-template-columns: 8rem 8rem 8rem;
+    grid-template-columns: 9rem 9rem 9rem;
 }
 
-.nav a {
+.nav button {
+    border: none;
+    background: none;
+    outline: none;
     display: inline;
     text-decoration: none;
-    padding: 0rem;
+    padding: 0.1rem 0.2rem 0.1rem 0.2rem;
     text-align: left;
     color: var(--stdText);
     font-size: 1.5rem;
     transition: 0.3s;
 }
 
-.nav a:hover{
+.nav button:hover{
     color: var(--Red);
+    cursor: pointer;
 }
 
-#imgWrapper {
-    position: fixed;
-    top: 20%;
-    left: 60%
-}
-
-#rose {
-    max-width: 45%
-}
 
 #introduction {
 
@@ -82,12 +78,8 @@ h1 {
 /* TODO: Have these show upon equivalent button click */
 #about_info, #projects_info, #contact_info {
     display: none;
+    font-size: 1.5rem;
+    color: var(--stdText);
+    margin-top: 3rem;
+
 } 
-
-
-@media(max-width: 1023px){
-
-    #rose {
-        display: none;
-    }
-}
