@@ -27,10 +27,19 @@ h1 {
     line-height: 1rem;
 }
 
+a {
+    color: var(--highlight);
+}
+
+#subtitle_wrapper {
+    width: 30rem;
+    height: 5rem;
+}
+
 #subtitle {
     font-size: 2.5rem;
     color: var(--stdText);
-    line-height: 1rem;
+    line-height: 2rem;
 }
 
 #passion {
@@ -81,5 +90,25 @@ h1 {
     font-size: 1.5rem;
     color: var(--stdText);
     margin-top: 3rem;
+    height: 16rem;
+    width: 60rem;
 
 } 
+
+.higlight {
+    color: var(--Red);
+}
+
+@media screen and (max-width: 768px){
+    body {
+        margin-top: 9rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #subtitle {
+        text-align: center;
+    }
+}

@@ -22,8 +22,9 @@
 		<h1>Antonio Ancona</h1>
 
 		<!-- TODO: Add rotatin word script to span -->
-		<p id = "subtitle">Passionate about <span id= "passion"></span></p>
-
+		<div id="subtitle_wrapper">
+			<p id = "subtitle">Passionate about <span id= "passion"></span></p>
+		</div>
 		<nav class="nav">
 			<!-- TODO: Each one of these must show the equivalent
 					   information Div once clicked -->
@@ -40,15 +41,28 @@
 					JavaScript to avoid inline styling-->
 
 		<div style="display : none" id="about_info">
-			<p>About button information</p>
+			<p>Hi! My name is Antonio Ancona. I am a Software Developer with a deep interest for both
+			<span class="higlight">Front-End</span> and <span class="higlight">Back-End</span> technologies.
+			<br>
+			<br>
+			My passion is creating tools that help people reach their goals, and adding to my own knowledge
+			along the way, from <span class="higlight">UI Design</span> to under-the-hood <span class="higlight">algorithms
+			</span> and <span class="higlight">data managing</span>.</p>
 		</div>
 
 		<div style="display : none" id="projects_info">
-			<p>Projects button information</p>
+			<p>My open-source projects are hosted on GitHub: <br>
+				<br>
+			<i class="fab fa-github-square"></i>   <a href="https://github.com/quaverous2" target="_blank">quaverous2</a></p>
+			<div></div>
 		</div>
 
 		<div style="display : none" id="contact_info">
-			<p>Contact me button information</p>
+			<p>I am available through these channels: <br>
+				<br>
+				<i class="fas fa-envelope fa-lg"></i>   <a href="mailto: contact@antonioancona.it">contact@antonioancona.it</a> <br>
+				<br>
+				<i class="fab fa-linkedin fa-lg"></i>   <a href="https://www.linkedin.com/in/antonio-ancona-328843197/" target="_blank">Antonio Ancona</a></p>
 		</div>
 
 		<script src="js/mainFunctions.js"></script>
