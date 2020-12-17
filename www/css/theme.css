@@ -31,6 +31,10 @@ a {
     color: var(--highlight);
 }
 
+a:visited {
+    color: var(--highlight);
+}
+
 #subtitle_wrapper {
     width: 30rem;
     height: 5rem;
